@@ -4,7 +4,12 @@ vim.pack.add({
 
 local ts = require('nvim-treesitter')
 
--- Define which languages you want
+ts.setup {
+  indent = {
+    enable = true
+  }
+}
+
 local ensure_installed = {
     "c_sharp",
     "lua",
@@ -13,7 +18,6 @@ local ensure_installed = {
     "markdown"
 }
 
--- Check what is already installed to avoid redundant compilations
 local installed = ts.get_installed()
 for _, lang in ipairs(ensure_installed) do
   if not vim.list_contains(installed, lang) then
@@ -28,9 +32,6 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function()
     -- Start Treesitter highlighting
     vim.treesitter.start()
-    
-    -- Enable Treesitter-based indentation
-    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
   end,
 })
 
@@ -38,6 +39,5 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = { "md" },
     callback = function()
         vim.treesitter.start()
-        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
     end
 })
