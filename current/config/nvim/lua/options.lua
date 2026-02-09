@@ -12,6 +12,7 @@ vim.opt.tabstop = 4
 vim.opt.swapfile = false
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 0 -- set to 0 to default to tabstop value
+vim.opt.smartindent = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.list = true

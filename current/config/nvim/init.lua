@@ -4,3 +4,7 @@ require("plugins")
 require("lsp")
 require("diagnostic")
 
+vim.keymap.set("n", "<leader><leader>r", function()
+    vim.cmd("source $MYVIMRC")
+    print("Config reloaded!")
+end, { desc = "Reload Config" })
