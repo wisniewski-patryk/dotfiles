@@ -12,7 +12,7 @@ roslyn.setup({
     exe = 'Microsoft.CodeAnalysis.LanguageServer',
     args = {
         '--logLevel=Information',
-        '--extensionLogDirectory=' .. vim.fs.dirname(vim.lsp.get_log_path()),
+        '--extensionLogDirectory=' .. '/home/patryk/.logs/lsp/roslyn/',
     },
     config = {
         on_attach = shared.on_attach,
