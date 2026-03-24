@@ -48,5 +48,5 @@ sudo dnf install wlogout
 sudo dnf install waybar
 
 sudo dnf install pavucontrol
-enable_copr_if_needed "solopasha/hyprland"
+enable_copr_if_needed "lionheartp/Hyprland"
 sudo dnf install hyprland
