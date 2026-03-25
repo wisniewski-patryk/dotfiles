@@ -6,10 +6,10 @@
 		"configurations": [],
 		"compounds": []
 	},
-	"csharp.debug.debugConsoleVerbosity": "verbose",
 	"editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace",
 	"workbench.editor.pinnedTabsOnSeparateRow": true,
 	"workbench.editor.wrapTabs": true,
+	"window.zoomLevel": 0.2,
 	"workbench.editor.highlightModifiedTabs": true,
 	"editor.fontSize": 13,
 	"extensions.autoUpdate": false,

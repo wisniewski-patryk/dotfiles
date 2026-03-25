@@ -5,7 +5,10 @@ vim.pack.add({
 require("nvim-tree").setup({
     sync_root_with_cwd = true,
     respect_buf_cwd = true,
-    view = {width=35,side="left"},
+    view = {
+        width=35,
+        side="left"
+    },
     renderer = {
         group_empty = true,
         highlight_git = true,
