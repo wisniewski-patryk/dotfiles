@@ -78,6 +78,7 @@ button {
 }
 
 #clock {
+  font-family: "monospace";
   color: #82AAFF;
 }
 

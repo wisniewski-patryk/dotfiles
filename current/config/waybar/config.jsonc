@@ -15,6 +15,7 @@
   ],
   "modules-right": [
     // "bluetooth",
+    "custom/timetracker",
     "pulseaudio/slider",
     "pulseaudio",
     "network",
@@ -23,6 +24,12 @@
     "custom/power"
   ],
   // Modules configuration
+  "custom/timetracker": {
+    "exec": "tt waybar --project Praca",
+    "interval": 60,
+    "return-type": "json",
+    "on-click": "tt start --project Praca"
+  },
   "custom/power": {
     "format": "",
     "on-click": "wlogout",

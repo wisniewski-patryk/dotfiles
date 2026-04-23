@@ -1,3 +1,5 @@
+require("vim._core.ui2").enable({})
+
 local nvim_version = vim.version()
 
 if nvim_version.major == 0 and nvim_version.minor == 12 then 
