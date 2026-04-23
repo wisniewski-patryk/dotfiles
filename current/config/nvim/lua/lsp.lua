@@ -5,5 +5,7 @@ require("lsp.shared")
 require("lsp.roslyn")
 -- Load Bash Lsp
 require("lsp.bash")
+-- Load Zig Lsp
+require("lsp.zig")
 
 -- Note: lspconfig is handled in your plugins/lspconfig.lua
