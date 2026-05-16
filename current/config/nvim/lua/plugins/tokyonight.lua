@@ -1,3 +1,4 @@
+print("Loading plugin theme tokyonight")
 vim.pack.add({
     { src = "https://github.com/folke/tokyonight.nvim" }
 })

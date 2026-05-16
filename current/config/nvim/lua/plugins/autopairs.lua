@@ -1,3 +1,4 @@
+print("Loading plugin autopairs")
 vim.pack.add({
     { src = "https://github.com/windwp/nvim-autopairs" },
 })
