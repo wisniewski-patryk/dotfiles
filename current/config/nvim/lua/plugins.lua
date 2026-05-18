@@ -1,3 +1,4 @@
+print("Loading plugins")
 -- theme
 require("plugins.tokyonight")
 require("plugins.icons")
@@ -10,5 +11,4 @@ require("plugins.whichkey")
 -- code tools
 require("plugins.treesitter")
 require("plugins.cmp")
-require("plugins.lspconfig")
 

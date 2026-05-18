@@ -9,12 +9,13 @@ window {
 
 button {
   margin: 24px;
-  border-color: #595959;
-  text-decoration-color: #FFFFFF;
-  color: #FFFFFF;
+  text-decoration-color: #82AAFF;
+  color: #82AAFF;
   background-color: #1E1E1E;
+  border-color: #82AAFF;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  border-radius: 0px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20%;

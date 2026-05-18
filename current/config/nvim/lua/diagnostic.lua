@@ -1,3 +1,4 @@
+print("Loading diagnostic settings")
 vim.diagnostic.config({
     virtual_text = true,           -- Show errors at the end of the line
     signs = true,                  -- Show signs in the gutter (left side)

@@ -1,3 +1,4 @@
+print("Loading plugin treesitter")
 vim.pack.add({
     { src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" }
 })
@@ -10,12 +11,19 @@ ts.setup {
   }
 }
 
+print("Ensuring needed treesitters are installed")
 local ensure_installed = {
     "c_sharp",
     "lua",
     "vim",
     "vimdoc",
-    "markdown"
+    "markdown",
+    "rust",
+    "zig",
+    "bash",
+    "html",
+    "typescript",
+    "javascript"
 }
 
 local installed = ts.get_installed()
