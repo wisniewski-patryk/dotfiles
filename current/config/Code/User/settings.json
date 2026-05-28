@@ -15,10 +15,6 @@
 	"editor.fontSize": 13,
 	"editor.renderWhitespace": "all",
 	"editor.minimap.autohide": "mouseover",
-	"editor.inlayHints.padding": true,
-	"editor.inlineCompletionsAccessibilityVerbose": true,
-	"editor.suggest.snippetsPreventQuickSuggestions": true,
-	"editor.quickSuggestionsDelay": 100,
 	"editor.formatOnType": true,
 	"editor.inlayHints.fontSize": 10,
 	"editor.lineNumbers": "on",
@@ -81,6 +77,7 @@
 		"EPGBASEURL",
 		"Fotboll",
 		"guestportal",
+		"healthcheck",
 		"Hotellinx",
 		"Infobip",
 		"Infor",
@@ -126,4 +123,12 @@
 	"gitlens.ai.model": "vscode",
 	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
 	"workbench.colorTheme": "Dark Modern",
+	"chat.viewProgressBadge.enabled": true,
+	"github.copilot.chat.agentDebugLog.fileLogging.enabled": true,
+	"workbench.editorAssociations": {
+		"*.copilotmd": "vscode.markdown.preview.editor",
+		"{hexdiff}:/**/*.*": "hexEditor.hexedit",
+		"{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+		"*.qrc": "qt-core.qrcEditor"
+	},
 }
