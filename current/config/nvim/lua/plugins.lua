@@ -12,3 +12,4 @@ require("plugins.whichkey")
 require("plugins.treesitter")
 require("plugins.cmp")
 
+require("plugins.mason")
