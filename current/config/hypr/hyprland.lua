@@ -3,6 +3,7 @@ FileManager = "nautilus"
 Menu = "rofi -show drun"
 -- Menu = wofi --show drun
 Browser = "firefox"
+Browser2 = "/usr/bin/chromium-browser"
 
 require("config")
 require("looknfeel")
