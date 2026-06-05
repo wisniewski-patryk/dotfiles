@@ -1,5 +1,0 @@
-if [ -d "$HOME/.config/speeron/" ]; then
-	for file in "$HOME/.config/speeron/"*; do
-		[ -f "$file" ] && source "$file"
-	done
-fi
