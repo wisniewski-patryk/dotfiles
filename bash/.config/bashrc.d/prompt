@@ -1,25 +1,48 @@
-# parse_git_branch: returns current git branch in parentheses, or empty
+PROMPT_DIR_MAX_LEN=40
+
 parse_git_branch() {
-	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-cwdir_fun() {
-	local dir
-	dir="$(pwd)"
-	echo "$dir" | sed "s|$HOME|~|"
+build_prompt() {
+    local dir full last prefix short_user short_host
+    local user_part host_part path_part
+
+    dir="$(pwd)"
+    full="${dir/#$HOME/\~}"
+
+    local git_part
+    git_part="$(parse_git_branch)"
+
+    # Estimate full visible prompt length: (HH:MM) user@host path (branch) $
+    local time_len=7  # "(HH:MM) "
+    local suffix_len=3  # " $ "
+    local full_length=$(( time_len + ${#USER} + 1 + ${#HOSTNAME} + 1 + ${#full} + ${#git_part} + suffix_len ))
+
+    if [ $full_length -gt $PROMPT_DIR_MAX_LEN ]; then
+        short_user=$(echo "$USER" | cut -c1)
+        short_host=$(hostname | cut -c1)
+        user_part="${short_user}@${short_host}"
+
+        local last="${full##*/}"
+        if [[ "$full" == \~* ]]; then
+            prefix="~"
+        else
+            prefix=""
+        fi
+        path_part="${prefix}/.../${last}"
+    else
+        user_part="${USER}@${HOSTNAME}"
+        path_part="$full"
+    fi
+
+    local time_part="\[\e[93m\](\A)"
+    local uh="\[\e[92m\]${user_part}"
+    local cwd="\[\e[38;5;27m\]${path_part}"
+    local git="\[\e[91m\]\$(parse_git_branch)"
+    local reset="\[\e[0m\]"
+
+    PS1="${time_part} ${uh} ${cwd} ${git}${reset} \$ "
 }
 
-# Colored prompt parts as variables for readability
-# Time in yellow, wrapped in parentheses
-time_part='\[\e[93m\](\A)'
-# User and host in green
-user_host='\[\e[92m\]\u@\h'
-# Current working directory in blue (256-color)
-cwdir='\[\e[38;5;27m\]$(cwdir_fun)'
-# Git branch in red (wrapped by parse_git_branch)
-git_branch='\[\e[91m\]$(parse_git_branch)'
-# Reset color
-reset='\[\e[0m\]'
-
-# Assemble PS1 from parts, ending with a space and dollar sign
-PS1="${time_part} ${user_host} ${cwdir} ${git_branch}${reset} \$ "
+PROMPT_COMMAND=build_prompt

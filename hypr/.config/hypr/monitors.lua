@@ -19,8 +19,8 @@ hl.monitor({
 hl.monitor({
     output = 'desc:Dell Inc. DELL P2422H 4CHZRM3',
     mode = '1920x1080',
-    position = '0x0',
---    scale = 1.0,
-    mirror = 'eDP-1'
+    position = '-1920x0',
+    scale = 1.0,
+--    mirror = 'eDP-1'
 })
 

@@ -6,8 +6,9 @@ vim.pack.add({
 local ts = require('nvim-treesitter')
 
 ts.setup {
-  indent = {
-    enable = true
+  parser_install_dir = "/home/patrykwisniewski/.local/share/nvim/site",
+  highlight = {
+      enable = true,
   }
 }
 

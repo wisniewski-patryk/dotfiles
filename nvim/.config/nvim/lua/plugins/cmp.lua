@@ -2,7 +2,9 @@ print("Loading plugins completion with lsp")
 
 vim.pack.add({
     { src = "https://github.com/hrsh7th/nvim-cmp" },
-    { src = "https://github.com/hrsh7th/cmp-nvim-lsp" }
+    { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
+    { src = "https://github.com/hrsh7th/cmp-buffer" },
+    { src = "https://github.com/hrsh7th/cmp-path" },
 })
 
 local cmp = require('cmp')
@@ -31,5 +33,7 @@ cmp.setup({
     }),
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
+        { name = 'buffer'},
+        { name = 'path'}
     }),
 })

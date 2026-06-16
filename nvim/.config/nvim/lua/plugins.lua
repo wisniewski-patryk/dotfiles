@@ -11,3 +11,4 @@ require("plugins.treesitter")
 require("plugins.cmp")
 require("plugins.mason")
 
+require("plugins.mason")
