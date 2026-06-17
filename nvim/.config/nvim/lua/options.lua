@@ -22,3 +22,6 @@ vim.opt.list = true
 vim.opt.autocomplete = true
 
 vim.opt.showtabline = 1
+
+vim.opt.scrolloff = 10
+vim.opt.numberwidth = 5
