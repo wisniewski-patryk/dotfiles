@@ -19,7 +19,7 @@
 	"editor.inlayHints.fontSize": 10,
 	"editor.lineNumbers": "on",
 	"editor.renderLineHighlight": "all",
-	"git.blame.editorDecoration.enabled": true,
+	"git.blame.editorDecoration.enabled": false,
 	"git-graph.dialog.rebase.launchInteractiveRebase": true,
 	"git-graph.dialog.fetchIntoLocalBranch.forceFetch": true,
 	"github.copilot.nextEditSuggestions.enabled": false,
@@ -131,4 +131,5 @@
 		"{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
 		"*.qrc": "qt-core.qrcEditor"
 	},
+	"qt-qml.doNotAskForQmllsDownload": true
 }
