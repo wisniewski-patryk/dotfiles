@@ -1,19 +1,4 @@
 # dotfiles
+Hyprland desktop configs managed with GNU Stow.
 
-Linux distribution:
-FEDORA
-
-Window manager:
-Hyprland
-
-Topbar:
-waybar
-
-Browser:
-Firefox
-
-Terminal emulator:
-Ghostty
-
-program setup:
 

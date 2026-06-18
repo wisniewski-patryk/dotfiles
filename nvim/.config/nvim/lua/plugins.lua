@@ -9,5 +9,6 @@ require("plugins.lualine")
 -- code tools
 require("plugins.treesitter")
 require("plugins.cmp")
+require("plugins.mason")
 
 require("plugins.mason")
