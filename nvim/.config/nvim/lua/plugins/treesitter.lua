@@ -15,6 +15,7 @@ ts.setup {
 print("Ensuring needed treesitters are installed")
 local ensure_installed = {
     "c_sharp",
+    "razor",
     "lua",
     "vim",
     "vimdoc",
@@ -23,6 +24,7 @@ local ensure_installed = {
     "zig",
     "bash",
     "html",
+    "css",
     "typescript",
     "javascript"
 }
