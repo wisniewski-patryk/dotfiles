@@ -11,4 +11,5 @@ require("plugins.treesitter")
 require("plugins.cmp")
 require("plugins.mason")
 
-require("plugins.mason")
+require("plugins.tree-explorer")
+require("plugins.bafa")

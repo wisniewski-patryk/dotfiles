@@ -3,6 +3,9 @@
 		"configurations": [],
 		"compounds": []
 	},
+	"window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Dark Modern",
+  "workbench.preferredLightColorTheme": "Dark Modern",
 	"workbench.editor.pinnedTabsOnSeparateRow": true,
 	"workbench.editor.wrapTabs": true,
 	"workbench.editor.highlightModifiedTabs": true,
@@ -38,7 +41,7 @@
 	"chat.viewSessions.orientation": "stacked",
 	"hediet.vscode-drawio.theme": "kennedy",
 	"hediet.vscode-drawio.appearance": "dark",
-	"extensions.autoUpdate": false,
+	"extensions.autoUpdate": "off",
 	"extensions.experimental.affinity": {
 		"asvetliakov.vscode-neovim": 1
 	},
@@ -130,5 +133,5 @@
 		"{hexdiff}:/**/*.*": "hexEditor.hexedit",
 		"{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
 		"*.qrc": "qt-core.qrcEditor"
-	},
+	}
 }

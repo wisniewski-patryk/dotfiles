@@ -1,0 +1,24 @@
+[idle]
+pre_action_fade_seconds = 0.5
+
+[idle.behavior.lock]
+timeout = 600
+action = "lock"
+enabled = true             # explicitly disabled in the default config
+
+[idle.behavior.screen-off]
+timeout = 900
+action = "screen_off"       # turns monitors off, and back on when you return
+enabled = true             # explicitly disabled in the default config
+
+[idle.behavior.suspend]
+timeout = 900
+action = "lock_and_suspend" # or action = "suspend" with lock_before_suspend = false
+enabled = false
+
+[idle.behavior.custom]
+enabled = false
+timeout = 48
+action = "command"
+command = "notify-send 'Idle' 'Going idle'"
+resume_command = "notify-send 'Idle' 'Back from idle'"

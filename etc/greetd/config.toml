@@ -9,8 +9,10 @@ vt = 1
 # `agreety` is the bundled agetty/login-lookalike. You can replace `/bin/sh`
 # with whatever you want started, such as `sway`.
 # command = "agreety --cmd /bin/sh"
-command = "tuigreet --remember --cmd start-hyprland --asterisks --time --window-padding 1 --container-padding 2 --prompt-padding 1 -w 120"
+# ostatnio uzywany przezemnie command = "tuigreet --remember --cmd start-hyprland --asterisks --time --window-padding 1 --container-padding 2 --prompt-padding 1 -w 120"
 # command = "wlgreet --theme dark --layout center"
+command = "/usr/bin/noctalia-greeter-session -- --user patryk --session Hyprland"
+
 
 # The user to run the command as. The privileges this user must have depends
 # on the greeter. A graphical greeter may for example require the user to be

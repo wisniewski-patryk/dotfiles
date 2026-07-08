@@ -1,0 +1,21 @@
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = ["clock_main"]
+
+[desktop_widgets.widget.clock_main]
+enabled = true
+type     = "clock"
+cx       = 960.0
+cy       = 340.0
+box_width  = 400.0
+box_height = 200.0
+rotation = 0.0
+
+[desktop_widgets.widget.clock_main.settings]
+format = "{:%H:%M:%S}"
+clock_style = "digital"
+color  = "on_surface"
+shadow = true
+center_text = false
+circle = true
