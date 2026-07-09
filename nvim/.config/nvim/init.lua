@@ -12,3 +12,6 @@ else
     print("It is not Neovim 0.12")
 end
 
+
+local ok, matugen = pcall(require, 'matugen')
+if ok then matugen.setup() end

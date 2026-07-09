@@ -1,0 +1,6 @@
+[theme]
+mode              = "dark"        # dark | light | auto
+source            = "builtin"     # builtin | wallpaper | community | custom
+builtin           = "Tokyo-Night"    # bundled palette name
+# community_palette = "TokyoNight"   # community palette name when source = "community"
+

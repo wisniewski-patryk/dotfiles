@@ -3,6 +3,9 @@
 		"configurations": [],
 		"compounds": []
 	},
+	"window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Dark Modern",
+  "workbench.preferredLightColorTheme": "Dark Modern",
 	"workbench.editor.pinnedTabsOnSeparateRow": true,
 	"workbench.editor.wrapTabs": true,
 	"workbench.editor.highlightModifiedTabs": true,
@@ -130,6 +133,10 @@
 		"{hexdiff}:/**/*.*": "hexEditor.hexedit",
 		"{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
 		"*.qrc": "qt-core.qrcEditor"
+<<<<<<< HEAD
 	},
 	"qt-qml.doNotAskForQmllsDownload": true
+=======
+	}
+>>>>>>> main
 }

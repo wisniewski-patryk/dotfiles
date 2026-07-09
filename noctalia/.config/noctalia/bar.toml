@@ -1,0 +1,98 @@
+[bar]
+order = ["topBar"]
+
+[bar.topBar]
+position           = "top"
+enabled            = true
+auto_hide          = false       # slide out after pointer leaves; reveal from edge trigger strip
+show_on_workspace_switch = true  # with auto_hide: briefly reveal when the active workspace changes
+reserve_space      = true        # reserve compositor exclusive zone / push windows away
+layer              = "top"       # top | overlay; overlay appears above fullscreen apps
+
+thickness          = 28          # bar cross-axis size in pixels (height for horizontal, width for vertical)
+background_opacity = 1.0         # 0.0 (transparent) to 1.0 (opaque)
+border             = "outline"   # color role or #RRGGBB for the bar outline
+border_width       = 1.0         # inside outline width in pixels; 0 disables it
+shadow             = false        # cast the global [shell.shadow]
+contact_shadow     = false       # dark gradient between an attached panel and the bar (depth at the seam)
+panel_overlap      = 1           # logical px an attached panel overlaps the bar edge to hide the seam
+radius             = 14          # global corner radius fallback
+margin_ends        = 16         # inset from each end of the bar along its main axis
+margin_edge        = 0          # distance from the nearest screen edge (positive values float the bar)
+margin_opposite_edge = 0         # extra reserved space on the inward side of the bar (below for top, above for bottom)
+padding            = 24          # main-axis padding from bar edges to start/end widget sections
+widget_spacing     = 24           # gap between widgets within a section
+hover_highlight    = true        # softly tint the widget under the mouse pointer with its foreground color
+scale              = 1.15         # content scale multiplier for icons and text
+font_weight        = "regular"   # "regular" | "bold" - primary label weight for bar widgets
+font_family        = "monospace"          # typeface for this bar's widgets; empty inherits the global font
+
+# Default capsule style for all widgets on this bar (see Widget Capsule section)
+capsule            = false
+capsule_fill       = "surface_variant" # Capsule background color role; fixed hex colors are also supported.
+capsule_thickness  = 0.9          # capsule size across the bar as a fraction of bar thickness (1.0 fills the bar)
+capsule_radius     = 8.0            # omit for automatic pill radius
+capsule_opacity    = 1.0
+# capsule_border   = "outline"   # omit this key for no border by default
+
+start  = ["launcher", "wallpaper", "workspaces"]
+center = ["control-center", "clock", "privacy", "lock_keys"]
+end    = ["tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery",  "session"]
+
+[widget.control-center]
+glyph = "home"
+capsule = true
+
+[widget.notifications]
+hide_when_no_unread = true
+
+[widget.launcher]
+glyph = "menu-2"
+custom_image_colorize = true
+
+[widget.clock]
+format = "{:%A}  {:%Y}-{:%m}-{:%d}  {:%T}"
+
+[widget.workspaces]
+display = "id"          # none | id | name
+minimal = false         # true = text-only labels, no animated pills
+max_label_chars = 2     # truncate long workspace names (e.g. "VESKTOP" → "VE")
+labels_only_when_occupied = true  # (1) (2*) ( ) (4) - occupied tags and the active tag show labels (*active but empty)
+hide_when_empty = true
+pill_scale = 1.0
+active_pill_size = 2.5
+inactive_pill_size = 1.0
+focused_color = "secondary"
+occupied_color = "primary"
+empty_color = "surface_variant"
+focused_output_only = false  # true = only the focused monitor highlights its active workspace
+
+[widget.volume]
+device = "output"   # output | input
+glyph = ""          # custom active glyph; empty = built-in dynamic icons
+mute_glyph = ""     # custom mute/0% glyph; empty = built-in mute icon
+scroll_step = 10
+show_label = true
+mute_color = "error"
+
+[widget.input-volume]
+type = "volume"
+device = "input"
+
+[widget.output-volume]
+type = "volume"
+device = "output"
+
+[widget.battery]
+type = "battery"
+display_mode = "graphic"
+
+[widget.network]
+show_label = false
+
+[widget.lock_keys]
+display          = "short"
+show_caps_lock   = true
+show_num_lock    = true
+show_scroll_lock = false
+hide_when_off    = true
