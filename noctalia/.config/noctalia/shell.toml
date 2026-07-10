@@ -41,7 +41,7 @@ alpha     = 0.55    # multiplied by each component's background opacity
 transparency_mode     = "solid"  # solid | soft | glass; controls floating/centered opacity and card translucency
 borders               = true   # outline on floating/centered panel shells and section cards inside panels
 shadow                = true   # cast the global [shell.shadow] from panel surfaces
-launcher_placement       = "centered" # attached | floating | centered
+launcher_placement       = "attached" # attached | floating | centered
 clipboard_placement      = "centered" # attached | floating | centered
 control_center_placement = "attached" # attached | floating | centered
 wallpaper_placement      = "attached" # attached | floating | centered
@@ -50,7 +50,7 @@ polkit_placement         = "floating" # attached | floating
 polkit_position          = "center"   # auto | center | top_left | … (floating only)
 floating_offset          = 8           # px gap between a floating/detached panel and the bar edge
 open_near_click_control_center = false  # attached/floating: follow the bar click instead of bar-center
-open_near_click_launcher       = false  # attached/floating: follow the bar click instead of bar-center
+open_near_click_launcher       = true  # attached/floating: follow the bar click instead of bar-center
 open_near_click_clipboard      = false  # attached/floating: follow the bar click instead of bar-center
 open_near_click_wallpaper      = false  # attached/floating: follow the bar click instead of bar-center
 open_near_click_session        = false  # attached/floating: follow the bar click instead of bar-center
@@ -90,7 +90,6 @@ action = "none"
 action = "command"
 command = "swaylock -f"
 
-
 [shell.mpris]
 blacklist = []           # optional list of players to hide from media widgets/control-center
 
@@ -104,3 +103,4 @@ freeze_screen     = true                       # freeze the desktop before regio
 confirm_region    = true                       # confirm region captures with Enter or Space
 pipe_to_command   = false                       # pipe the PNG to a shell command on stdin
 pipe_command      = ""                          # annotator/uploader, e.g. "swappy -f -" or "satty -f -"
+

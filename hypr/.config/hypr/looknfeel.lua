@@ -14,7 +14,7 @@ hl.layer_rule({
 hl.config({
   general = {
     gaps_in = 2,
-    gaps_out = 5,
+    gaps_out = 4,
   },
 
   decoration = {
