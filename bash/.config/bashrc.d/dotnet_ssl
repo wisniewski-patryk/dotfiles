@@ -1,7 +1,7 @@
 
 ## set dotnet dev-certs trust path
 if ! [[ "$SSL_CERT_DIR" =~ "$HOME/.aspnet/dev-certs/trust:/usr/lib/ssl/certs" ]]; then
-    SSL_CERT_DIR="$HOME/.aspnet/dev-certs/trust:/usr/lib/ssl/certs:$SSL_CERT_DIR"
+    SSL_CERT_DIR="$HOME/.aspnet/dev-certs/trust:/usr/lib/ssl/certs:/etc/ssl/certs:$SSL_CERT_DIR"
 fi
 export SSL_CERT_DIR
 

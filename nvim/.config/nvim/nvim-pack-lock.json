@@ -36,12 +36,16 @@
       "rev": "c2a0dd0d931d0fb07665e1fedb1ea688da3b80b4",
       "src": "https://github.com/windwp/nvim-autopairs"
     },
+    "nvim-base16": {
+      "rev": "012273e4bbf3e143224a272ad2efd10b69a000ba",
+      "src": "https://github.com/RRethy/nvim-base16"
+    },
     "nvim-cmp": {
       "rev": "da88697d7f45d16852c6b2769dc52387d1ddc45f",
       "src": "https://github.com/hrsh7th/nvim-cmp"
     },
     "nvim-lspconfig": {
-      "rev": "5fef3b4a5f1057553b78d048322782c3a9ae69c6",
+      "rev": "92ee7d42320edfbb81f3cad851314ab197fa324a",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-tree.lua": {
@@ -49,7 +53,7 @@
       "src": "https://github.com/nvim-tree/nvim-tree.lua"
     },
     "nvim-treesitter": {
-      "rev": "15b3416cc1f557c4932468e512a0bd45871167bc",
+      "rev": "8aada0e3940c573e38b417a226b43bc8675f8958",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {

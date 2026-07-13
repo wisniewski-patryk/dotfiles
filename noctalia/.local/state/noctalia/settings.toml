@@ -69,29 +69,23 @@ widget_order = [ "lockscreen-login-box@DP-6", "lockscreen-login-box@DP-4", "lock
         show_password_hint = true
 
 [theme]
+builtin = "Tokyo-Night"
+community_palette = "Oxocarbon"
+mode = "dark"
 source = "builtin"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "ghostty", "hyprland" ]
 
-[wallpaper]
-directory = "/home/patrykwisniewski/Vault/Notes/Wallpappers"
+[wallpaper.default]
+path = "/home/patryk/Vaults/Notes/Wallpappers/london-night-river.jpg"
 
-    [wallpaper.default]
-    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
+[wallpaper.last]
+path = "/home/patryk/Vaults/Notes/Wallpappers/london-night-river.jpg"
 
-    [wallpaper.last]
-    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
+[wallpaper.monitors.DP-6]
+path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
 
-    [wallpaper.monitors.DP-6]
-    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
-
-    [wallpaper.monitors.eDP-1]
-    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
-
-    [[wallpaper.favorite]]
-    builtin_palette = "Tokyo-Night"
-    palette_source = "builtin"
-    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
-    theme_mode = "dark"
+[wallpaper.monitors.eDP-1]
+path = "/home/patryk/Vaults/Notes/Wallpappers/london-night-river.jpg"
