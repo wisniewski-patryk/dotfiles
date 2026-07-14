@@ -2,6 +2,18 @@ vim.pack.add({
     { src = "https://github.com/nvim-lualine/lualine.nvim" }
 })
 
+local function lspIndicator()
+    local clients = vim.lsp.get_clients({ bufnr = 0 })
+    if #clients == 0 then
+        return ''
+    end
+    local names = {}
+    for _, client in ipairs(clients) do
+        table.insert(names, client.name)
+    end
+    return '󰒓 ' .. table.concat(names, ', ')
+end
+
 require('lualine').setup({
     options = {
         theme = 'tokyonight',
@@ -15,17 +27,7 @@ require('lualine').setup({
         lualine_x = {
             -- LSP status indicator
             {
-                function()
-                    local clients = vim.lsp.get_clients({ bufnr = 0 })
-                    if #clients == 0 then
-                        return ''
-                    end
-                    local names = {}
-                    for _, client in ipairs(clients) do
-                        table.insert(names, client.name)
-                    end
-                    return '󰒓 ' .. table.concat(names, ', ')
-                end,
+                lspIndicator,
                 color = { fg = '#00ff00' },
             },
             'encoding',

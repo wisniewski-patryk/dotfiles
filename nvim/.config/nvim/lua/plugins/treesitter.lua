@@ -6,7 +6,7 @@ vim.pack.add({
 local ts = require('nvim-treesitter')
 
 ts.setup {
-  parser_install_dir = "/home/patrykwisniewski/.local/share/nvim/site",
+  parser_install_dir = vim.fn.expand("~/.local/share/nvim/site"),
   highlight = {
       enable = true,
   }
@@ -38,17 +38,15 @@ end
 
 -- 3. Enable Highlighting and Indentation
 -- We use an autocommand to trigger Tree-sitter when opening C# files
+local function startTreeSitter()
+    vim.treesitter.start()
+end
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "cs" }, -- filetype for C#
-  callback = function()
-    -- Start Treesitter highlighting
-    vim.treesitter.start()
-  end,
+  callback = startTreeSitter
 })
 
 vim.api.nvim_create_autocmd("FileType", {
     pattern = { "md" },
-    callback = function()
-        vim.treesitter.start()
-    end
+    callback = startTreeSitter
 })

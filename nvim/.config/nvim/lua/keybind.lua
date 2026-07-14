@@ -3,14 +3,12 @@ print("Loading keybindings")
 print("Mapping leader")
 vim.g.mapleader = " "
 
-print("Add Explore")
-vim.keymap.set('n', '<leader>e', vim.cmd.Explore, { desc = "Explore"})
-
 print("Add Config reloading")
-vim.keymap.set("n", "<leader><leader>r", function()
+local function reloadConfig()
     vim.cmd("source $MYVIMRC")
     print("Config reloaded!")
-end, { desc = "Reload Config" })
+end
+vim.keymap.set("n", "<leader><leader>r", reloadConfig, { desc = "Reload Config" })
 
 vim.keymap.set('n', '<leader><tab>', ':bnext<CR>', { desc = "Next buffer", silent = true })
 vim.keymap.set('n', '<leader><S-tab>', ':bprevious<CR>', { desc = "Previous buffer", silent = true })

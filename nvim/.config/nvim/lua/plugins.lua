@@ -13,3 +13,5 @@ require("plugins.mason")
 
 require("plugins.tree-explorer")
 require("plugins.bafa")
+
+require("plugins.telescope")
