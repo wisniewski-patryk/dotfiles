@@ -25,3 +25,5 @@ vim.opt.showtabline = 1
 
 vim.opt.scrolloff = 10
 vim.opt.numberwidth = 5
+
+vim.g.editorconfig = true
