@@ -4,6 +4,10 @@
       "rev": "87968d01e72660826bce00f9956515bd1d0d5b74",
       "src": "https://github.com/mistweaverco/bafa.nvim"
     },
+    "bufferline.nvim": {
+      "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
+      "src": "https://github.com/akinsho/bufferline.nvim"
+    },
     "cmp-buffer": {
       "rev": "b74fab3656eea9de20a9b8116afa3cfc4ec09657",
       "src": "https://github.com/hrsh7th/cmp-buffer"
@@ -31,6 +35,10 @@
     "nvim-autopairs": {
       "rev": "7b9923abad60b903ece7c52940e1321d39eccc79",
       "src": "https://github.com/windwp/nvim-autopairs"
+    },
+    "nvim-base16": {
+      "rev": "012273e4bbf3e143224a272ad2efd10b69a000ba",
+      "src": "https://github.com/RRethy/nvim-base16"
     },
     "nvim-cmp": {
       "rev": "2ffe79f1f021def8dd1fcd81deb16f1bb0d989f3",
@@ -71,6 +79,10 @@
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
       "src": "https://github.com/folke/which-key.nvim"
+    },
+    "zig.vim": {
+      "rev": "30a1634b3a4193290dc3aad8f84c53b353b1d80f",
+      "src": "https://codeberg.org/ziglang/zig.vim"
     }
   }
 }

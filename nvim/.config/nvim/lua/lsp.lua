@@ -18,4 +18,4 @@ require("lsp.typescript")
 require("lsp.angular")
 require("lsp.roslyn")
 
-
+vim.lsp.inlay_hint.enable(true)
