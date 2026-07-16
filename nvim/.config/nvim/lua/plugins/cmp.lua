@@ -5,6 +5,7 @@ vim.pack.add({
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
     { src = "https://github.com/hrsh7th/cmp-buffer" },
     { src = "https://github.com/hrsh7th/cmp-path" },
+    { src = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help" }
 })
 
 local cmp = require('cmp')
@@ -34,6 +35,7 @@ cmp.setup({
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
         { name = 'buffer'},
-        { name = 'path'}
+        { name = 'path'},
+        { name = 'nvim_lsp_signature_help' },
     }),
 })
