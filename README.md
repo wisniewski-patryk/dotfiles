@@ -67,3 +67,9 @@ sudo dnf install ghostty
 ```
 
 10. download [lazygit](https://github.com/jesseduffield/lazygit)
+11. set git 
+```
+git config --global user.email <email_address>
+git config --global user.name <name>
+git config --global credential.helper store
+```
