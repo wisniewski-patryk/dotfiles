@@ -133,5 +133,7 @@
 		"{hexdiff}:/**/*.*": "hexEditor.hexedit",
 		"{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
 		"*.qrc": "qt-core.qrcEditor"
-	}
+	},
+	"dotnet.server.extensionPaths": [],
+	"workbench.experimental.modernUI": true
 }
