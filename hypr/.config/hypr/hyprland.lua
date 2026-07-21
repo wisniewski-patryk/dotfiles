@@ -1,4 +1,5 @@
-Terminal = "ghostty"
+-- Terminal = "ghostty"
+Terminal = "kitty"
 FileManager = "nautilus"
 Menu = "rofi -show drun"
 -- Menu = wofi --show drun

@@ -1,3 +1,5 @@
+config_version = 2
+
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
@@ -76,7 +78,7 @@ source = "builtin"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "ghostty", "hyprland" ]
+    builtin_ids = [ "btop", "ghostty", "hyprland", "kitty" ]
 
 [wallpaper.default]
 path = "/home/patryk/Vaults/Notes/Wallpappers/london-night-river.jpg"

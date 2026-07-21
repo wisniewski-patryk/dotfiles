@@ -5,12 +5,26 @@ vim.pack.add({
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
     { src = "https://github.com/hrsh7th/cmp-buffer" },
     { src = "https://github.com/hrsh7th/cmp-path" },
-    { src = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help" }
+    { src = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help" },
+    { src = "https://github.com/onsails/lspkind.nvim" }
 })
 
 local cmp = require('cmp')
+local lspkind = require("lspkind")
 
 cmp.setup({
+    formatting = {
+        format = lspkind.cmp_format(),
+        fields = { "icon", "abbr", "menu", "kind" },
+        mode = "symbol_text",
+        menu = ({
+            buffer = "[Buffer]",
+            nvim_lsp = "[LSP]",
+            luasnip = "[LuaSnip]",
+            nvim_lua = "[Lua]",
+            latex_symbols = "[Latex]",
+        })
+    },
     mapping = cmp.mapping.preset.insert({
         ['<C-b>'] = cmp.mapping.scroll_docs(-4),
         ['<C-f>'] = cmp.mapping.scroll_docs(4),

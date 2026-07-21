@@ -22,8 +22,14 @@ fi
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
+
+if ! [[ "$PATH" =~ "$HOME/.dotnet/tools:" ]]; then
+    PATH="$HOME/.dotnet/tools:$PATH"
+fi
 export PATH
 
+EDITOR=nvim
+export EDITOR
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
