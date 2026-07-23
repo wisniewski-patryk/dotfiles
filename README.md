@@ -73,3 +73,14 @@ git config --global user.email <email_address>
 git config --global user.name <name>
 git config --global credential.helper store
 ```
+
+12. increase inotify limit, in `/etc/sysctl.d/99-inotify.conf`
+```
+fs.inotify.max_user_instances=512
+fs.inotify.max_user_watches=524288
+```
+restart sysctl
+```
+sudo sysctl --system
+```
+check `cat /proc/sys/fs/inotify/max_user_instances` -> should return 512 if works
