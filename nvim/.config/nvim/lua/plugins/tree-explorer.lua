@@ -75,4 +75,4 @@ require("nvim-tree").setup({
     hijack_cursor = true,
     sync_root_with_cwd = true
 })
-vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle NvimTree Float" })
+vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", With_desc("Toggle NvimTree Float" ))

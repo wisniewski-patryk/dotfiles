@@ -15,7 +15,12 @@ local lspkind = require("lspkind")
 cmp.setup({
     formatting = {
         format = lspkind.cmp_format(),
-        fields = { "icon", "abbr", "menu", "kind" },
+        fields = {
+            "icon",
+            "abbr",
+            "menu",
+            "kind"
+        },
         mode = "symbol_text",
         menu = ({
             buffer = "[Buffer]",
