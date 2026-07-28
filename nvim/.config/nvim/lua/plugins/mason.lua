@@ -34,3 +34,5 @@ require("mason").setup({
         },
     }
 })
+
+vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin:" .. vim.env.PATH -- add path to mason folder to PATH
