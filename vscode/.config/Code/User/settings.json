@@ -4,12 +4,10 @@
 		"compounds": []
 	},
 	"window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Dark Modern",
   "workbench.preferredLightColorTheme": "Dark Modern",
 	"workbench.editor.pinnedTabsOnSeparateRow": true,
 	"workbench.editor.wrapTabs": true,
 	"workbench.editor.highlightModifiedTabs": true,
-	"workbench.activityBar.location": "top",
 	"window.menuBarVisibility": "compact",
 	"window.commandCenter": false,
 	"window.zoomLevel": 0.2,
@@ -77,6 +75,7 @@
 		"checkincheckout",
 		"CNBC",
 		"Dormakaba",
+		"Dtos",
 		"EPGBASEURL",
 		"Fotboll",
 		"guestportal",
@@ -135,5 +134,9 @@
 		"*.qrc": "qt-core.qrcEditor"
 	},
 	"dotnet.server.extensionPaths": [],
-	"workbench.experimental.modernUI": true
+	"workbench.experimental.modernUI": true,
+	"workbench.preferredDarkColorTheme": "Dark Modern",
+	"workbench.editor.enablePreview": false,
+	"workbench.activityBar.compact": true,
+	"workbench.activityBar.location": "top"
 }
