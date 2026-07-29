@@ -28,7 +28,7 @@ require('lualine').setup({
             -- LSP status indicator
             {
                 lspIndicator,
-                color = { fg = '#00ff00' },
+                color = { fg = '#009900' },
             },
             'encoding',
             'fileformat',

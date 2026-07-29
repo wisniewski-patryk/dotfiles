@@ -8,11 +8,9 @@ local function reloadConfig()
     vim.cmd("source $MYVIMRC")
     print("Config reloaded!")
 end
-vim.keymap.set("n", "<leader><leader>r", reloadConfig, { desc = "Reload Config" })
 
-vim.keymap.set('n', '<leader><tab>', ':bnext<CR>', { desc = "Next buffer", silent = true })
-vim.keymap.set('n', '<leader><S-tab>', ':bprevious<CR>', { desc = "Previous buffer", silent = true })
-
-
-
+local opts = { silent = true }
+vim.keymap.set("n", "<leader><leader>r", reloadConfig,   With_desc("Reload Config", opts))
+vim.keymap.set('n', '<leader><tab>',   ':bnext<CR>',     With_desc("Next buffer", opts))
+vim.keymap.set('n', '<leader><S-tab>', ':bprevious<CR>', With_desc("Previous buffer", opts))
 
