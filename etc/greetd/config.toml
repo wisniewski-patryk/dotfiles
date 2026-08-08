@@ -11,7 +11,7 @@ vt = 1
 # command = "agreety --cmd /bin/sh"
 # ostatnio uzywany przezemnie command = "tuigreet --remember --cmd start-hyprland --asterisks --time --window-padding 1 --container-padding 2 --prompt-padding 1 -w 120"
 # command = "wlgreet --theme dark --layout center"
-command = "/usr/bin/noctalia-greeter-session -- --user patryk --session Hyprland"
+command = "/usr/bin/noctalia-greeter-session -- --session Hyprland"
 
 
 # The user to run the command as. The privileges this user must have depends
