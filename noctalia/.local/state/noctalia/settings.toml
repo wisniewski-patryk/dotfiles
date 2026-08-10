@@ -1,4 +1,4 @@
-config_version = 2
+config_version = 8
 
 [lockscreen_widgets]
 enabled = true
@@ -10,25 +10,29 @@ widget_order = [
     "lockscreen-widget-0000000000000001"
 ]
 
-
 [theme]
 builtin = "Tokyo-Night"
 community_palette = "Oxocarbon"
-mode = "dark"
 source = "builtin"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "ghostty", "hyprland", "kitty" ]
 
-[wallpaper.default]
-path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
+[wallpaper]
+directory = "/home/patrykwisniewski/Vault/Notes/Wallpappers"
 
-[wallpaper.last]
-path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
+    [wallpaper.default]
+    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
 
-[wallpaper.monitors.DP-6]
-path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
+    [wallpaper.last]
+    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
 
-[wallpaper.monitors.eDP-1]
-path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
+    [wallpaper.monitors.DP-4]
+    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
+
+    [wallpaper.monitors.DP-6]
+    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/patrykwisniewski/Vault/Notes/Wallpappers/london-night-river.jpg"
