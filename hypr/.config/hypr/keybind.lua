@@ -8,6 +8,7 @@ hl.bind(mainMod .. "+ R",     hl.dsp.exec_cmd(ipc .. "panel-toggle launcher"))
 hl.bind(mainMod .. "+ SHIFT + CTRL + P", hl.dsp.exec_cmd(ipc .. "screenshot-fullscreen"))
 hl.bind(mainMod .. "+ SHIFT + P",        hl.dsp.exec_cmd(ipc .. "screenshot-region"))
 hl.bind(mainMod .. "+ L",                hl.dsp.exec_cmd(ipc .. "session lock"))
+hl.bind(mainMod .. "+ SHIFT + L",        hl.dsp.exec_cmd(ipc .. "panel-open session"))
 
 local runOutlook = "/usr/bin/chromium-browser --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn"
 local runTeams = "/usr/bin/chromium-browser --profile-directory=Default --app-id=cifhbcnohmdccbgoicgdjpfamggdegmo"
@@ -24,7 +25,9 @@ hl.bind(mainMod .. "+ Q", hl.dsp.exec_cmd(Terminal))
 hl.bind(mainMod .. "+ B", hl.dsp.exec_cmd(Browser))
 hl.bind(mainMod .. "+ SHIFT + B", hl.dsp.exec_cmd(Browser2))
 hl.bind(mainMod .. "+ E", hl.dsp.exec_cmd(FileManager))
-hl.bind(mainMod .. "+ M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+
+local shutdownHyprland = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
+hl.bind(mainMod .. "+ M", hl.dsp.exec_cmd(shutdownHyprland))
 
 hl.bind(mainMod .. "+ V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. "+ P", hl.dsp.window.pseudo())
