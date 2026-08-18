@@ -24,9 +24,10 @@ Under the hood, `stow` fetches the target root path from the `.stowrc` file (whi
 5. set greeter in `/etc/greetd/cofnig.conf`
 ```
 [default_session]
-command = /usr/bin/noctalia-greeter-session
-user = "greeter"
+command = "/usr/bin/noctalia-greeter-session -- --session Hyprland"
+user = "greetd"
 ```
+ready file is in `./etc/greetd/config.toml`
 
 6. enable greetd
 ```
@@ -64,6 +65,7 @@ dotnet tool update -g linux-dev-certs
 dotnet linux-dev-certs install
 dotnet tool install --global roslyn-language-server --prerelease
 sudo dnf install ghostty
+sudo dnf install fzf
 ```
 
 10. download [lazygit](https://github.com/jesseduffield/lazygit)
@@ -84,3 +86,6 @@ restart sysctl
 sudo sysctl --system
 ```
 check `cat /proc/sys/fs/inotify/max_user_instances` -> should return 512 if works
+
+13. setup close lid behaviour
+copy `./etc/logind.conf.d/` folder to `/etc/systemd/` and restart systed service status `sudo systemctl restart systemd-logind`
