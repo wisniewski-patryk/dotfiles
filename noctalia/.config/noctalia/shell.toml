@@ -1,5 +1,4 @@
 [shell]
-ui_scale              = 1.0             # content scale for panels and non-bar shell UI
 corner_radius_scale   = 1.0             # 0 = square, 1 = default, 2 = extra rounded
 font_family           = "monospace"    # Pango family string; Fontconfig handles fallback
 lang                  = "en"            # override language detection; BCP-47 or POSIX locale
@@ -14,7 +13,6 @@ polkit_agent          = false           # register Noctalia's native polkit auth
 password_style        = "random"       # default | random
 avatar_path           = "~/source/dotfiles/noctalia/.config/noctalia/avatar.png"
 settings_show_advanced = false          # show advanced settings by default in Settings
-middle_click_opens_widget_settings = true # middle-click bar widgets to open their Settings entry
 show_location         = true            # show weather location text in shell UI
 launch_apps_as_systemd_services = false # launch apps as transient systemd scopes
 launch_apps_custom_command = ""         # wrap launched apps; $CMD is replaced with the app command
@@ -42,7 +40,7 @@ transparency_mode     = "solid"  # solid | soft | glass; controls floating/cente
 borders               = true   # outline on floating/centered panel shells and section cards inside panels
 shadow                = true   # cast the global [shell.shadow] from panel surfaces
 launcher_placement       = "attached" # attached | floating | centered
-clipboard_placement      = "centered" # attached | floating | centered
+clipboard_placement      = "floating" # attached | floating | centered
 control_center_placement = "attached" # attached | floating | centered
 wallpaper_placement      = "attached" # attached | floating | centered
 session_placement        = "attached" # attached | floating | centered
@@ -60,7 +58,6 @@ categories     = true   # show launcher category filters; Tab toggles them while
 show_icons     = true   # show application icons in launcher results
 compact        = false  # smaller icons and tighter rows; hides subtitles
 app_grid       = false  # icon grid with labels underneath when results are apps only
-session_search = false  # include session actions in general search, not only behind /session
 sort_by_usage  = true   # boost frequently used apps and show Recently Used filter
 
 # Dmenu-style providers: a command emits newline-separated candidates that show up
