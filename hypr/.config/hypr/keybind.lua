@@ -12,8 +12,10 @@ hl.bind(mainMod .. "+ SHIFT + L",        hl.dsp.exec_cmd(ipc .. "panel-open sess
 
 local runOutlook = "/usr/bin/chromium-browser --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn"
 local runTeams = "/usr/bin/chromium-browser --profile-directory=Default --app-id=cifhbcnohmdccbgoicgdjpfamggdegmo"
+local runClaude = "/usr/bin/chromium-browser --profile-directory=Default --app-id=fmpnliohjhemenmnlpbfagaolkdacoja"
 hl.bind(mainMod .. "+ SHIFT + O",     hl.dsp.exec_cmd(runOutlook))
 hl.bind(mainMod .. "+ SHIFT + T",     hl.dsp.exec_cmd(runTeams))
+hl.bind(mainMod .. "+ SHIFT + A",    hl.dsp.exec_cmd(runClaude))
 
 hl.bind(mainMod .. "+ CTRL + left",   hl.dsp.workspace.move({ monitor = -1 }))
 hl.bind(mainMod .. "+ CTRL + right",  hl.dsp.workspace.move({ monitor = 1 }))
