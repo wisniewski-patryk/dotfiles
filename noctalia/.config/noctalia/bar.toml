@@ -54,8 +54,9 @@ custom_image_colorize = true
 format = "{:%A}  {:%Y}-{:%m}-{:%d}  {:%T}"
 
 [widget.workspaces]
-display = "id"          # none | id | name
-minimal = false         # true = text-only labels, no animated pills
+show_labels = true
+label_source = "id"          # none | id | name
+# minimal = false         # true = text-only labels, no animated pills
 max_label_chars = 2     # truncate long workspace names (e.g. "VESKTOP" → "VE")
 labels_only_when_occupied = true  # (1) (2*) ( ) (4) - occupied tags and the active tag show labels (*active but empty)
 hide_when_empty = true
@@ -71,7 +72,6 @@ focused_output_only = false  # true = only the focused monitor highlights its ac
 device = "output"   # output | input
 glyph = ""          # custom active glyph; empty = built-in dynamic icons
 mute_glyph = ""     # custom mute/0% glyph; empty = built-in mute icon
-scroll_step = 10
 show_label = true
 mute_color = "error"
 

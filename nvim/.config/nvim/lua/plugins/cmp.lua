@@ -14,7 +14,9 @@ local lspkind = require("lspkind")
 
 cmp.setup({
     formatting = {
-        format = lspkind.cmp_format(),
+        format = lspkind.cmp_format({
+            symbol_map = { Copilot = "" },
+        }),
         fields = {
             "icon",
             "abbr",
@@ -24,10 +26,13 @@ cmp.setup({
         mode = "symbol_text",
         menu = ({
             buffer = "[Buffer]",
+            copilot = "[Copilot]",
             nvim_lsp = "[LSP]",
             luasnip = "[LuaSnip]",
             nvim_lua = "[Lua]",
             latex_symbols = "[Latex]",
+            path = "[Path]",
+            nvim_lsp_signature_help = "[Sig]",
         })
     },
     mapping = cmp.mapping.preset.insert({
@@ -52,9 +57,10 @@ cmp.setup({
         end, { 'i', 's' }),
     }),
     sources = cmp.config.sources({
-        { name = 'nvim_lsp' },
-        { name = 'buffer'},
-        { name = 'path'},
-        { name = 'nvim_lsp_signature_help' },
+        { name = 'copilot', group_index = 2 },
+        { name = 'nvim_lsp', group_index = 2  },
+        { name = 'buffer', group_index = 2 },
+        { name = 'path', group_index = 2 },
+        { name = 'nvim_lsp_signature_help', group_index = 2  },
     }),
 })

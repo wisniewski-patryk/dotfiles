@@ -18,3 +18,4 @@ require("plugins.fzf")
 
 require("plugins.telescope")
 require("plugins.dap")
+require("plugins.copilot")
