@@ -17,9 +17,9 @@ Under the hood, `stow` fetches the target root path from the `.stowrc` file (whi
 2. update packages: `sudo dnf update`
 3. add hyprland copr: `sudo dnf copr enable lionheartp/Hyprland`
 4. install hyprland and noctalia with greeter:
-    `sudo dnf install hyprland noctalia noctalia-greeter`
+    `sudo dnf install hyprland noctalia noctalia-greeter hyprland-guiutils`
     or
-    `sudo dnf install hyprland-git noctalia-git noctalia-greeter`
+    `sudo dnf install hyprland-git noctalia-git noctalia-greeter hyprland-guiutils`
 
 5. set greeter in `/etc/greetd/cofnig.conf`
 ```
@@ -49,7 +49,7 @@ stow ghostty
 stow hypr
 stow lazydocker
 stow lazygit
-rm ~/.local/state/noctalia/settings.toml
+# rm ~/.local/state/noctalia/settings.toml
 stow noctalia
 stow nvim
 stow systemd
@@ -58,26 +58,31 @@ stow vscode
 ```
 
 9. download tools
-```
+```bash
 sudo dnf install neovim
 sudo dnf install dotnet-sdk-10.0
 dotnet tool update -g linux-dev-certs
 dotnet linux-dev-certs install
 dotnet tool install --global roslyn-language-server --prerelease
-sudo dnf install ghostty
+# sudo dnf install ghostty
 sudo dnf install fzf
 ```
 
 10. download [lazygit](https://github.com/jesseduffield/lazygit)
-11. set git 
+```bash
+sudo dnf copr enable dejan/lazygit
+sudo dnf install lazygit
 ```
+
+11. set git 
+```bash
 git config --global user.email <email_address>
 git config --global user.name <name>
 git config --global credential.helper store
 ```
 
 12. increase inotify limit, in `/etc/sysctl.d/99-inotify.conf`
-```
+```bash
 fs.inotify.max_user_instances=512
 fs.inotify.max_user_watches=524288
 ```
