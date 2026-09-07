@@ -46,6 +46,7 @@ rm ~/.bashrc ~/.bash_profile
 stow bash
 stow btop
 stow ghostty
+stow kitty
 stow hypr
 stow lazydocker
 stow lazygit
