@@ -17,9 +17,9 @@ Under the hood, `stow` fetches the target root path from the `.stowrc` file (whi
 2. update packages: `sudo dnf update`
 3. add hyprland copr: `sudo dnf copr enable lionheartp/Hyprland`
 4. install hyprland and noctalia with greeter:
-    `sudo dnf install hyprland noctalia noctalia-greeter hyprland-guiutils`
+    `sudo dnf install hyprland noctalia noctalia-greeter hyprland-guiutils hyprpolkitagent`
     or
-    `sudo dnf install hyprland-git noctalia-git noctalia-greeter hyprland-guiutils`
+    `sudo dnf install hyprland-git noctalia-git noctalia-greeter hyprland-guiutils hyprpolkitagent`
 
 5. set greeter in `/etc/greetd/cofnig.conf`
 ```
@@ -67,6 +67,8 @@ dotnet linux-dev-certs install
 dotnet tool install --global roslyn-language-server --prerelease
 # sudo dnf install ghostty
 sudo dnf install fzf
+sudo snd install btop
+sudo dnf install qt6-qtdeclarative qt6-qt5compat qt6-qtquickcontrols2
 ```
 
 10. download [lazygit](https://github.com/jesseduffield/lazygit)
