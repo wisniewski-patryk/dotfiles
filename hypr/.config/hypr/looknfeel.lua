@@ -15,8 +15,11 @@ hl.config({
   general = {
     gaps_in = 2,
     gaps_out = 4,
+    layout = "dwindle",
   },
-
+  dwindle = {
+      preserve_split = true,
+  },
   decoration = {
     rounding = 8,
     rounding_power = 2,
@@ -25,7 +28,7 @@ hl.config({
       enabled = true,
       range = 4,
       render_power = 3,
-      color = 0xee1a1a1a,
+      color = '0xee1a1a1a',
     },
 
     blur = {
