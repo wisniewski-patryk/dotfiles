@@ -17,7 +17,11 @@ vim.opt.smartindent = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = {
+    tab = '» ',
+    trail = '·',
+    nbsp = '␣'
+}
 
 vim.opt.autocomplete = true
 
