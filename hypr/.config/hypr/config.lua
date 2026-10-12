@@ -18,7 +18,6 @@ hl.config({
     misc = {
         force_default_wallpaper = -1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
-
     }
 })
 
@@ -32,3 +31,9 @@ hl.device({
     name = "epic-mouse-v1",
     sensitivity = -0.5
 })
+
+hl.window_rule({
+    match = { class = "kitty" },
+    suppress_event = "maximize"
+})
+
