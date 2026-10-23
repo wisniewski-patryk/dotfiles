@@ -26,7 +26,8 @@ local ensure_installed = {
     "html",
     "css",
     "typescript",
-    "javascript"
+    "javascript",
+    "json"
 }
 
 local installed = ts.get_installed()
