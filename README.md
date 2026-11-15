@@ -69,6 +69,7 @@ dotnet tool install --global roslyn-language-server --prerelease
 sudo dnf install fzf
 sudo snd install btop
 sudo dnf install qt6-qtdeclarative qt6-qt5compat qt6-qtquickcontrols2
+sudo dnf install pavucontrol
 ```
 
 10. download [lazygit](https://github.com/jesseduffield/lazygit)
