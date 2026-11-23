@@ -6,5 +6,6 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("/usr/libexec/polkit-mate-authentication-agent-1 &")
     hl.exec_cmd("systemctl --user restart xdg-desktop-portal-hyprland xdg-desktop-portal")
     hl.exec_cmd(noctalia)
+    hl.exec_cmd("$HOME/.config/hypr/scripts/drop-realtime.sh")
 end)
 
