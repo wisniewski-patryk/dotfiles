@@ -1,6 +1,30 @@
 # dotfiles
 Hyprland desktop configs managed with GNU Stow.
 
+## Server
+### Setup SSH Server on machine
+Turn on ssh deamon on server machine
+```sh
+sudo systemctl enable sshd
+sudo systemctl start sshd
+```
+
+### Connection to server with key (to do on client)
+Create file `~/.ssh/config`
+```sh
+# setup client to not disconnect from server
+Host *
+    ServerAliveInterval 60 # send packet every <value> sek
+    ServerAliveCountMax 3  # drop connection if server fail to response 3 times in row
+
+Host <name>
+    User <user_name>
+    HostName <IP_or_address>
+    PubkeyAuthentication yes
+    IdentityFile ~/.ssh/<private_key_file>
+```
+
+## Workstation
 ### How to Use
 To create a link, navigate to the repository root in your terminal and run:
 ```bash
@@ -69,6 +93,7 @@ dotnet tool install --global roslyn-language-server --prerelease
 sudo dnf install fzf
 sudo snd install btop
 sudo dnf install qt6-qtdeclarative qt6-qt5compat qt6-qtquickcontrols2
+sudo dnf install pavucontrol
 ```
 
 10. download [lazygit](https://github.com/jesseduffield/lazygit)
