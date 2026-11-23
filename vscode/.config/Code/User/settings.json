@@ -6,7 +6,6 @@
 	"window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "Dark Modern",
 	"workbench.editor.pinnedTabsOnSeparateRow": true,
-	"workbench.editor.wrapTabs": true,
 	"workbench.editor.highlightModifiedTabs": true,
 	"window.menuBarVisibility": "compact",
 	"window.commandCenter": false,
@@ -69,6 +68,7 @@
 	},
 	"cSpell.userWords": [
 		"Adyen",
+		"ASPNETCORE",
 		"Autofac",
 		"Automapper",
 		"checkin",
@@ -104,11 +104,14 @@
 		"Quickshell",
 		"refreshable",
 		"Resv",
+		"Rundeck",
+		"Serilog",
 		"Sjuan",
 		"Speeron",
 		"Sportkanalen",
 		"subfolio",
 		"Substract",
+		"Summarise",
 		"summarising",
 		"synchronised",
 		"Syncthing",
@@ -119,7 +122,8 @@
 		"Upserting",
 		"Visbook",
 		"Waitlist",
-		"Waybar"
+		"Waybar",
+		"Yarp"
 	],
 	"diffEditor.codeLens": true,
 	"gitlens.ai.model": "vscode",
@@ -138,5 +142,19 @@
 	"workbench.preferredDarkColorTheme": "Dark Modern",
 	"workbench.editor.enablePreview": false,
 	"workbench.activityBar.compact": true,
-	"workbench.activityBar.location": "top"
+	"workbench.activityBar.location": "top",
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false,
+		"xml": false,
+		"csharp": false
+	},
+	"claudeCode.hideOnboarding": true,
+	"csharp.debug.logging.moduleLoad": false,
+	"claudeCode.focusView": false,
+	"diffEditor.renderSideBySide": true,
+	"diffEditor.useInlineViewWhenSpaceIsLimited": false,
+	"workbench.panel.showLabels": false
 }

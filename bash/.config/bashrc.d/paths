@@ -7,5 +7,11 @@ fi
 if ! [[ "$PATH" =~ "$HOME/.dotnet/tools:" ]]; then
     PATH="$HOME/.dotnet/tools:$PATH"
 fi
+
+# Added by Azure Functions CLI installer
+if [[ "$PATH" =~ "$HOME/.azure-functions" ]]; then
+    PATH="/home/patrykwisniewski/.azure-functions:$PATH"
+fi
+
 export PATH
 
